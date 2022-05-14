@@ -8,12 +8,12 @@
 - Docker
 
 ## Como executar:
-- ''docker compose up no diretório''
-- ''curl --request PUT --url 'http://localhost:9200/loggings?pretty=' ''(cria o index loggings)
-- ''curl --request POST \
+- '''docker compose up''' no diretório
+- '''curl --request PUT --url 'http://localhost:9200/loggings?pretty='''' (cria o index loggings)
+- '''curl --request POST \
   --url 'http://localhost:9200/loggings/_bulk/?pretty=' \
   --header 'Content-Type: application/x-ndjson' \
-  --data ' conteúdo do arquivo request-data.txt '''  (popula o index)
+  --data ' conteúdo do arquivo request-data.txt ' '''  (popula o index)
 ## Como foi desenvolvido:
 
 Optei por usar o Elasticsearch e o Kibana de forma local por estar mais acostumado com o terminal do Linux, porém subi um docker-compose que roda ambos os containers pelo docker.
