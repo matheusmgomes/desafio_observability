@@ -20,4 +20,6 @@ Tive facilidade em aprender os comandos básicos do Elasticsearch e do Kibana, m
 
 No index, criei apenas o 'loggings' para armazenar os logs gerados pelo Random Logger. Para populacionar o index, utilizei uma ferramenta que transforma JSON simples para o NDJSON, que seria o JSON com as informações de index necessárias para a inserção no Elasticsearch. O resultado dessa transformação é o arquivo request-data.txt.
 
+Antes de utlizar o request-data para a inserção de dados no Elasticsearch, procurei utilizar o Filebeat para a coleta dos logs do Docker. A ideia era o Filebeat coletar os logs e enviar direto para o Elastic, porém tive problemas enormes na configuração dessa conexão entre as ferramentas. Por conta disso, preferi utilizar a inserção pelo curl com o arquivo txt.
+
 Por fim, foi um grande aprendizado de uma ferramenta que eu desconhecia por total e que com certeza me interessei pelo uso e pelas possibilidades que ela tem.
