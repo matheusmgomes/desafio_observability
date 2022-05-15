@@ -9,12 +9,7 @@
 
 ## Como executar:
 ```
- docker compose up
- curl --request PUT --url 'http://localhost:9200/loggings?pretty='
- curl --request POST \
-  --url 'http://localhost:9200/loggings/_bulk/?pretty=' \
-  --header 'Content-Type: application/x-ndjson' \
-  --data ' conteúdo do arquivo request-data.txt '
+./run.sh
 ```
 
 ## Como foi desenvolvido:
